@@ -1,0 +1,34 @@
+<form [formGroup]="form" (submit)="submit()">
+  <div class="form-group">
+      <div class="">
+
+          <input placeholder="Name" formControlName="name" type="text" required>
+     
+
+      </div>
+  </div>
+
+  <div class="form-group">
+      <div class="">
+          <input placeholder="Email" formControlName="email" type="email" required>
+      
+      </div>
+  </div>
+
+  <div class="form-group">
+      <div class="">
+          <input (change)="getFile($event)" placeholder="Picture" formControlName="picture" type="file" required>
+      
+      </div>
+  </div>
+
+  <div class="form-group btn-group">
+      <button class="" type="submit">Submit</button>
+  </div>
+</form>
+
+<!-- <button (click)="change()">click to change</button>
+<div *ngIf="condition">
+  <img [src]="urls" alt="">
+
+</div> -->

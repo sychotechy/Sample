@@ -1,0 +1,12 @@
+
+<select name="" id="" (change)="setNumber($event)" >
+  <option  *ngFor="let i of [1,2,3,4]">
+    {{i}}
+  </option>
+</select>
+<button (click)="change()">click</button>
+<div *ngIf="condition">
+  <app-Child  [choice]="data">
+
+  </app-Child>
+</div>
